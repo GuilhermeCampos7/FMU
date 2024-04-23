@@ -27,7 +27,6 @@
         android:layout_marginBottom="176dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
         app:layout_constraintBottom_toBottomOf="@+id/editTextDataAdmissao"
         app:layout_constraintEnd_toEndOf="@+id/editTextRe"
         app:layout_constraintStart_toStartOf="@+id/editTextSalario"
@@ -43,15 +42,17 @@
         android:inputType="date"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/editTextName"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/editTextSalario"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.478" />
 
     <EditText
         android:id="@+id/editTextSalario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="72dp"
-        android:layout_marginBottom="54dp"
+        android:layout_marginBottom="84dp"
         android:ems="10"
         android:inputType="numberDecimal"
         app:layout_constraintBottom_toTopOf="@+id/button3"
@@ -61,8 +62,8 @@
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginBottom="85dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="112dp"
         android:onClick="cadastrar"
         android:text="@string/txt_cadastrar"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -92,8 +93,8 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
         android:text="@string/txt_dataadmissao"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/editTextDataAdmissao" />
@@ -106,5 +107,40 @@
         android:text="@string/txt_salario"
         app:layout_constraintBaseline_toBaselineOf="@+id/editTextSalario"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:onClick="buscar"
+        android:text="@string/txt_buscar"
+        app:layout_constraintBottom_toTopOf="@+id/button6"
+        app:layout_constraintStart_toStartOf="@+id/button6" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginBottom="39dp"
+        android:onClick="cadastrar"
+        android:text="@string/txt_alterar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="101dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="36dp"
+        android:onClick="cadastrar"
+        android:text="@string/txt_excluir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/button5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
